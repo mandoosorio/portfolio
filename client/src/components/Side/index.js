@@ -20,11 +20,11 @@ function Side() {
             </div>
             
             <div className="nav-links">
-                <a href="//github.io/jo_geek" target="blank" rel="noreferrer">Github</a>
-                <a href="http://stackoverflow.com/users/4084003/" target="blank" rel="noreferrer">Stackoverflow</a>
-                <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="blank" rel="noreferrer">LinkedIn</a>
-                <a href="https://codepen.io/jo_Geek/" target="blank" rel="noreferrer">Codepen</a>
-                <a href="https://jsfiddle.net/user/jo_Geek/" target="blank" rel="noreferrer">JsFiddle</a>
+                <a href="//github.io/jo_geek" target="blank" rel="noreferrer">github</a>
+                <a href="http://stackoverflow.com/users/4084003/" target="blank" rel="noreferrer">stackoverflow</a>
+                <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="blank" rel="noreferrer">linkedin</a>
+                <a href="https://codepen.io/jo_Geek/" target="blank" rel="noreferrer">codepen</a>
+                <a href="https://jsfiddle.net/user/jo_Geek/" target="blank" rel="noreferrer">jsfiddle</a>
             </div>
             </div>
             <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu"></input>
@@ -36,24 +36,13 @@ function Side() {
             <div id="sidebarMenu">
                 <ul className="sidebarMenuInner">
                 <li>Armando Osorio<span>Web Developer</span></li>
-                <li><a href="https://vanila.io" target="blank" rel="noreferrer">Company</a></li>
-                <li><a href="https://instagram.com/plavookac" target="blank" rel="noreferrer">Instagram</a></li>
-                <li><a href="https://twitter.com/plavookac" target="blank" rel="noreferrer">Twitter</a></li>
-                <li><a href="https://www.youtube.com/channel/UCDfZM0IK6RBgud8HYGFXAJg" target="blank" rel="noreferrer">YouTube</a></li>
-                <li><a href="https://www.linkedin.com/in/plavookac/" target="blank" rel="noreferrer">Linkedin</a></li>
+                <li><a href="https://vanila.io" target="blank" rel="noreferrer">company</a></li>
+                <li><a href="https://instagram.com/plavookac" target="blank" rel="noreferrer">instagram</a></li>
+                <li><a href="https://twitter.com/plavookac" target="blank" rel="noreferrer">twitter</a></li>
+                <li><a href="https://www.youtube.com/channel/UCDfZM0IK6RBgud8HYGFXAJg" target="blank" rel="noreferrer">youtube</a></li>
+                <li><a href="https://www.linkedin.com/in/plavookac/" target="blank" rel="noreferrer">linkedin</a></li>
                 </ul>
             </div>
-            {/* <div id='center' className="main center">
-                <div className="mainInner">
-                <div>PURE CSS SIDEBAR TOGGLE MENU</div>
-                </div>
-                <div className="mainInner">
-                <div>PURE CSS SIDEBAR TOGGLE MENU</div>
-                </div>
-                <div className="mainInner">
-                <div>PURE CSS SIDEBAR TOGGLE MENU</div>
-                </div>
-            </div> */}
         </div>
     )
 }

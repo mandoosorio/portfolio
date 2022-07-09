@@ -4,7 +4,7 @@ html, body {
     height: 100%;
 }
 body {
-    background: #fff;
+    background: rgb(63, 58, 58);
     padding: 0;
     margin: 0;
     font-family: 'Varela Round', sans-serif;
@@ -25,7 +25,7 @@ body {
     margin: 0 auto;
     display: block;
     height: 100%;
-    margin-top: 60px;
+    /* margin-top: 60px; */
 }
 /* .mainInner{
     display: table;
@@ -48,7 +48,8 @@ body {
     /* margin-top: 60px; */
     transform: translateX(-250px);
     transition: transform 250ms ease-in-out;
-    background: linear-gradient(180deg, #FC466B 0%, #3F5EFB 100%);
+    /* background: linear-gradient(180deg, #633e76 0%, #32265e 100%); */
+    background: transparent;
 }
 .sidebarMenuInner{
     margin:0;
@@ -58,7 +59,7 @@ body {
 .sidebarMenuInner li{
     list-style: none;
     color: #fff;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: bold;
     padding: 20px;
     cursor: pointer;
@@ -71,7 +72,7 @@ body {
 }
 .sidebarMenuInner li a{
     color: #fff;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;

@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
 * {
     box-sizing: border-box;
 }
 
 body {
   margin: 0px;
-  font-family: 'segoe ui';
+  font-family: 'Varela Round', sans-serif;
 }
 
 .nav {
   height: 60px;
   width: 100%;
-  background-color: #FC466B;
+  /* background-color: #633e76; */
+  background-color: black;
   position: relative;
   z-index: 80px;
 }
@@ -41,10 +44,12 @@ body {
   padding: 13px 10px 13px 10px;
   text-decoration: none;
   color: #efefef;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+  margin-right: 10px;
 }
 
 .nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.10);
 }
 
 .nav > #nav-check {

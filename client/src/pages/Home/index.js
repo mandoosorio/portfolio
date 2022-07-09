@@ -1,7 +1,11 @@
+import Card from "../../components/Card";
+import Hero from "../../components/Hero";
+
 function Home() {
     return (
         <div>
-            <h2>Home Page</h2>
+            <Hero />
+            <Card />
         </div>
     )
 }
