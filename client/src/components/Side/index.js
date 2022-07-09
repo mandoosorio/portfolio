@@ -1,6 +1,9 @@
 import "./side.css";
 import "./nav.css";
 
+import React from 'react';
+import { Link } from "react-router-dom";
+
 function Side() {
     return (
         <div>
@@ -20,11 +23,11 @@ function Side() {
             </div>
             
             <div className="nav-links">
-                <a href="//github.io/jo_geek" target="blank" rel="noreferrer">github</a>
-                <a href="http://stackoverflow.com/users/4084003/" target="blank" rel="noreferrer">stackoverflow</a>
-                <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="blank" rel="noreferrer">linkedin</a>
-                <a href="https://codepen.io/jo_Geek/" target="blank" rel="noreferrer">codepen</a>
-                <a href="https://jsfiddle.net/user/jo_Geek/" target="blank" rel="noreferrer">jsfiddle</a>
+                <Link to="/technologies">technologies</Link>
+                <a href="http://stackoverflow.com/users/4084003/" target="blank" rel="noreferrer">companies</a>
+                <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="blank" rel="noreferrer">github</a>
+                <a href="https://codepen.io/jo_Geek/" target="blank" rel="noreferrer">linkedin</a>
+                <a href="https://jsfiddle.net/user/jo_Geek/" target="blank" rel="noreferrer">servicenow</a>
             </div>
             </div>
             <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu"></input>
@@ -36,7 +39,7 @@ function Side() {
             <div id="sidebarMenu">
                 <ul className="sidebarMenuInner">
                 <li>Armando Osorio<span>Web Developer</span></li>
-                <li><a href="https://vanila.io" target="blank" rel="noreferrer">company</a></li>
+                <li><a href="https://vanila.io" rel="noreferrer">company</a></li>
                 <li><a href="https://instagram.com/plavookac" target="blank" rel="noreferrer">instagram</a></li>
                 <li><a href="https://twitter.com/plavookac" target="blank" rel="noreferrer">twitter</a></li>
                 <li><a href="https://www.youtube.com/channel/UCDfZM0IK6RBgud8HYGFXAJg" target="blank" rel="noreferrer">youtube</a></li>

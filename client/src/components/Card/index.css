@@ -2,12 +2,13 @@
     padding: 40px;
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(64, 27, 27);
+    background-color: rgb(79, 25, 25);
 }
 
 .card {
     background-color: plum;
-    border-radius: 15px;
+    /* border-radius: 15px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 40px;
     margin: auto;
     margin-top: 20px;
