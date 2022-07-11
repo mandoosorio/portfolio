@@ -1,37 +1,58 @@
 import "./side.css";
 import "./nav.css";
+import logo from "../../assets/euphoria.PNG"
 
 import React from 'react';
 import { Link } from "react-router-dom";
 
 function Side() {
+
+    function collapseNav() {
+        var links = document.querySelector("#nav-check");
+        var openSidebarMenu = document.getElementById("openSidebarMenu");
+
+        if(links.checked === false && openSidebarMenu.checked === true) {
+            openSidebarMenu.checked = false;
+        }
+    }
+
+    function collapseSide() {
+        var links = document.querySelector("#nav-check");
+        var openSidebarMenu = document.getElementById("openSidebarMenu");
+
+        if(links.checked === true && openSidebarMenu.checked === false) {
+            links.checked = false;
+        }
+    }
+
     return (
         <div>
-            <div className="nav">
+            <div className="nav" id="nav">
             <input type="checkbox" id="nav-check"></input>
             <div className="nav-header">
                 <div className="nav-title">
                 
                 </div>
             </div>
-            <div className="nav-btn">
-                <label for="nav-check">
+            <div className="nav-btn" id="navBtn" onClick={collapseNav}>
+                <label htmlFor="nav-check">
                 <span></span>
                 <span></span>
                 <span></span>
                 </label>
             </div>
             
-            <div className="nav-links">
+            <div className="nav-links" id="navLinks">
+                <Link id="logoA" to="/"><span id="logoSpan"><img id="logo" src={logo} alt="logo"></img></span></Link>
                 <Link to="/technologies">technologies</Link>
-                <a href="http://stackoverflow.com/users/4084003/" target="blank" rel="noreferrer">companies</a>
-                <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="blank" rel="noreferrer">github</a>
-                <a href="https://codepen.io/jo_Geek/" target="blank" rel="noreferrer">linkedin</a>
-                <a href="https://jsfiddle.net/user/jo_Geek/" target="blank" rel="noreferrer">servicenow</a>
+                <Link to="/companies">companies</Link>
+                <Link to="/servicenow">servicenow</Link>
+                <Link to="/about">about</Link>
+                <Link to="/contact">contact</Link>
             </div>
             </div>
             <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu"></input>
-            <label for="openSidebarMenu" className="sidebarIconToggle">
+            <label onClick={collapseSide} htmlFor="openSidebarMenu" className="sidebarIconToggle">
                 <div className="spinner diagonal part-1"></div>
                 <div className="spinner horizontal"></div>
                 <div className="spinner diagonal part-2"></div>
